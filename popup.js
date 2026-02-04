@@ -41,9 +41,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Fallback or alert?
     }
 
+    localizePage(); // Apply translations
     await checkProStatus();
     setupEventListeners();
 });
+
+function localizePage() {
+    // Localize text content
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const message = chrome.i18n.getMessage(key);
+        if (message) {
+            element.textContent = message;
+        }
+    });
+
+    // Localize placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        const message = chrome.i18n.getMessage(key);
+        if (message) {
+            element.placeholder = message;
+        }
+    });
+}
 
 async function checkProStatus() {
     const result = await chrome.storage.local.get(['isPro']);

@@ -11,13 +11,13 @@
 <body>
   <div class="container">
     <header>
-      <h1>__MSG_appName__</h1>
+      <h1 data-i18n="appName">Easy PSD Converter</h1>
       <div id="pro-status" class="status-badge hidden">PRO</div>
     </header>
 
     <main>
       <div class="upload-area" id="drop-zone">
-        <p>__MSG_dropZoneText__</p>
+        <p data-i18n="dropZoneText">PSD 파일을 여기에 드래그하거나 클릭하세요.</p>
         <input type="file" id="file-input" multiple accept=".psd" hidden>
       </div>
 
@@ -26,12 +26,12 @@
       </div>
 
       <div class="actions">
-        <button id="convert-btn" class="primary-btn" disabled>__MSG_convertBtn__</button>
+        <button id="convert-btn" class="primary-btn" disabled data-i18n="convertBtn">변환하기</button>
       </div>
     </main>
 
     <footer>
-      <a href="#" id="open-settings">__MSG_openSettingsBtn__</a>
+      <a href="#" id="open-settings" data-i18n="openSettingsBtn">기기 등록 / 라이선스 입력</a>
     </footer>
   </div>
 
@@ -39,12 +39,13 @@
   <div id="limit-modal" class="modal hidden">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
-      <h2>__MSG_limitModalTitle__</h2>
-      <p>__MSG_limitModalDesc1__</p>
-      <p>__MSG_limitModalDesc2__</p>
+      <h2 data-i18n="limitModalTitle">⚠️ 변환 제한 안내</h2>
+      <p data-i18n="limitModalDesc1">한 번에 최대 5개까지만 변환할 수 있습니다.</p>
+      <p data-i18n="limitModalDesc2">무제한 변환을 원하시면 wiberwiber님에게 커피 한 잔을 후원해 주세요!</p>
       <div class="modal-actions">
-        <a href="https://buymeacoffee.com/wiberwiber" target="_blank" class="donate-btn">__MSG_donateBtn__</a>
-        <button id="enter-code-btn" class="secondary-btn">__MSG_haveCodeBtn__</button>
+        <a href="https://buymeacoffee.com/wiberwiber" target="_blank" class="donate-btn" data-i18n="donateBtn">☕ 후원하고
+          무제한 코드 받기</a>
+        <button id="enter-code-btn" class="secondary-btn" data-i18n="haveCodeBtn">이미 코드가 있어요</button>
       </div>
     </div>
   </div>
@@ -53,13 +54,13 @@
   <div id="license-modal" class="modal hidden">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
-      <h2>__MSG_licenseModalTitle__</h2>
-      <p>__MSG_licenseModalDesc__</p>
+      <h2 data-i18n="licenseModalTitle">🔑 Pro 활성화</h2>
+      <p data-i18n="licenseModalDesc">이메일로 받은 코드를 입력하세요.</p>
       <div class="input-group">
-        <input type="email" id="email-input" placeholder="__MSG_emailPlaceholder__">
-        <input type="text" id="code-input" placeholder="__MSG_codePlaceholder__">
+        <input type="email" id="email-input" placeholder="이메일 주소" data-i18n-placeholder="emailPlaceholder">
+        <input type="text" id="code-input" placeholder="라이선스 코드" data-i18n-placeholder="codePlaceholder">
       </div>
-      <button id="verify-btn" class="primary-btn">__MSG_verifyBtn__</button>
+      <button id="verify-btn" class="primary-btn" data-i18n="verifyBtn">인증하기</button>
       <p id="verify-msg" class="msg"></p>
     </div>
   </div>

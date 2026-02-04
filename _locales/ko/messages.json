@@ -1,0 +1,80 @@
+{
+    "appName": {
+        "message": "Easy PSD Converter"
+    },
+    "appDesc": {
+        "message": "PSD 파일을 쉽게 PNG로 변환하세요. wiberwiber를 후원하고 무제한 변환을 잠금 해제하세요!"
+    },
+    "dropZoneText": {
+        "message": "PSD 파일을 여기에 드래그하거나 클릭하세요."
+    },
+    "convertBtn": {
+        "message": "변환하기"
+    },
+    "convertingBtn": {
+        "message": "변환 중..."
+    },
+    "openSettingsBtn": {
+        "message": "기기 등록 / 라이선스 입력"
+    },
+    "limitModalTitle": {
+        "message": "⚠️ 변환 제한 안내"
+    },
+    "limitModalDesc1": {
+        "message": "한 번에 최대 5개까지만 변환할 수 있습니다."
+    },
+    "limitModalDesc2": {
+        "message": "무제한 변환을 원하시면 wiberwiber님에게 커피 한 잔을 후원해 주세요!"
+    },
+    "donateBtn": {
+        "message": "☕ 후원하고 무제한 코드 받기"
+    },
+    "haveCodeBtn": {
+        "message": "이미 코드가 있어요"
+    },
+    "licenseModalTitle": {
+        "message": "🔑 Pro 활성화"
+    },
+    "licenseModalDesc": {
+        "message": "이메일로 받은 코드를 입력하세요."
+    },
+    "emailPlaceholder": {
+        "message": "이메일 주소"
+    },
+    "codePlaceholder": {
+        "message": "라이선스 코드"
+    },
+    "verifyBtn": {
+        "message": "인증하기"
+    },
+    "proActive": {
+        "message": "Pro License Active ✅"
+    },
+    "errNoPsdLib": {
+        "message": "PSD 라이브러리가 로드되지 않았습니다. 페이지를 새로고침 해주세요."
+    },
+    "msgDone": {
+        "message": "모든 변환이 완료되었습니다!"
+    },
+    "msgError": {
+        "message": "변환 중 오류가 발생했습니다: "
+    },
+    "errNoFiles": {
+        "message": "변환된 파일이 없습니다."
+    },
+    "errNoZip": {
+        "message": "ZIP 라이브러리가 로드되지 않아 개별 다운로드를 시도합니다."
+    },
+    "errEnterAll": {
+        "message": "이메일과 코드를 모두 입력해주세요."
+    },
+    "msgSuccess": {
+        "message": "인증 성공! Pro 모드가 활성화되었습니다. 🎉"
+    },
+    "errInvalidCode": {
+        "message": "잘못된 코드입니다. 다시 확인해주세요."
+    },
+    "errLimitExceeded": {
+        "message": "기기 등록 제한(2대)을 초과했습니다."
+    }
+}

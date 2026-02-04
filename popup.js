@@ -54,10 +54,10 @@ async function checkProStatus() {
 function updateProUI() {
     if (isPro) {
         proStatusBadge.classList.remove('hidden');
-        openSettingsBtn.textContent = "Pro License Active ✅";
+        openSettingsBtn.textContent = chrome.i18n.getMessage("proActive");
     } else {
         proStatusBadge.classList.add('hidden');
-        openSettingsBtn.textContent = "기기 등록 / 라이선스 입력";
+        openSettingsBtn.textContent = chrome.i18n.getMessage("openSettingsBtn");
     }
 }
 
@@ -105,12 +105,12 @@ function setupEventListeners() {
 async function handleConversion() {
     if (selectedFiles.length === 0) return;
     if (!PSD) {
-        alert('PSD 라이브러리가 로드되지 않았습니다. 페이지를 새로고침 해주세요.');
+        alert(chrome.i18n.getMessage("errNoPsdLib"));
         return;
     }
 
     convertBtn.disabled = true;
-    convertBtn.textContent = '변환 중...';
+    convertBtn.textContent = chrome.i18n.getMessage("convertingBtn");
 
     const convertedFiles = [];
 
@@ -121,7 +121,7 @@ async function handleConversion() {
         }
 
         if (convertedFiles.length === 0) {
-            throw new Error('변환된 파일이 없습니다.');
+            throw new Error(chrome.i18n.getMessage("errNoFiles"));
         }
 
         if (convertedFiles.length === 1) {
@@ -131,7 +131,7 @@ async function handleConversion() {
         } else {
             // Zip download
             if (!window.JSZip) {
-                alert('ZIP 라이브러리가 로드되지 않아 개별 다운로드를 시도합니다.');
+                alert(chrome.i18n.getMessage("errNoZip"));
                 convertedFiles.forEach(f => downloadFile(f.href, f.filename));
             } else {
                 const zip = new window.JSZip();
@@ -157,10 +157,10 @@ async function handleConversion() {
             }
         }
 
-        alert('모든 변환이 완료되었습니다!');
+        alert(chrome.i18n.getMessage("msgDone"));
     } catch (error) {
         console.error(error);
-        alert('변환 중 오류가 발생했습니다: ' + error.message);
+        alert(chrome.i18n.getMessage("msgError") + error.message);
     } finally {
         // Cleanup individual object URLs
         convertedFiles.forEach(file => {
@@ -168,7 +168,7 @@ async function handleConversion() {
         });
 
         convertBtn.disabled = false;
-        convertBtn.textContent = '변환하기';
+        convertBtn.textContent = chrome.i18n.getMessage("convertBtn");
         selectedFiles = [];
         renderFileList();
     }
@@ -251,7 +251,7 @@ async function handleVerification() {
     const code = codeInput.value.trim();
 
     if (!email || !code) {
-        showMsg('이메일과 코드를 모두 입력해주세요.', 'error');
+        showMsg(chrome.i18n.getMessage("errEnterAll"), 'error');
         return;
     }
 
@@ -259,7 +259,7 @@ async function handleVerification() {
     const expectedCode = await generateCode(email);
 
     if (code === expectedCode) {
-        showMsg('인증 성공! Pro 모드가 활성화되었습니다. 🎉', 'success');
+        showMsg(chrome.i18n.getMessage("msgSuccess"), 'success');
         isPro = true;
 
         // Save to Local Storage
@@ -271,7 +271,7 @@ async function handleVerification() {
         updateProUI();
         setTimeout(closeAllModals, 2000);
     } else {
-        showMsg('잘못된 코드입니다. 다시 확인해주세요.', 'error');
+        showMsg(chrome.i18n.getMessage("errInvalidCode"), 'error');
     }
 }
 
@@ -304,7 +304,7 @@ async function registerDevice(email) {
 
     // 2. Check Limit
     if (mockData.devices.length >= 2) {
-        showMsg('기기 등록 제한(2대)을 초과했습니다.', 'error');
+        showMsg(chrome.i18n.getMessage("errLimitExceeded"), 'error');
         throw new Error('Device limit exceeded');
     }
 

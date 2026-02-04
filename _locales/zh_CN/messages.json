@@ -1,0 +1,80 @@
+{
+    "appName": {
+        "message": "Easy PSD Converter"
+    },
+    "appDesc": {
+        "message": "轻松将 PSD 文件转换为 PNG。支持 wiberwiber 以解锁无限转换！"
+    },
+    "dropZoneText": {
+        "message": "将 PSD 文件拖放到此处或点击上传。"
+    },
+    "convertBtn": {
+        "message": "转换"
+    },
+    "convertingBtn": {
+        "message": "转换中..."
+    },
+    "openSettingsBtn": {
+        "message": "注册设备 / 输入许可证"
+    },
+    "limitModalTitle": {
+        "message": "⚠️ 转换限制通知"
+    },
+    "limitModalDesc1": {
+        "message": "一次最多只能转换 5 个文件。"
+    },
+    "limitModalDesc2": {
+        "message": "如果想要无限转换，请即为 wiberwiber 买杯咖啡吧！"
+    },
+    "donateBtn": {
+        "message": "☕ 捐赠并获取无限代码"
+    },
+    "haveCodeBtn": {
+        "message": "我已有代码"
+    },
+    "licenseModalTitle": {
+        "message": "🔑 激活专业版"
+    },
+    "licenseModalDesc": {
+        "message": "请输入您通过电子邮件收到的代码。"
+    },
+    "emailPlaceholder": {
+        "message": "电子邮件地址"
+    },
+    "codePlaceholder": {
+        "message": "许可证代码"
+    },
+    "verifyBtn": {
+        "message": "验证"
+    },
+    "proActive": {
+        "message": "专业版许可证已激活 ✅"
+    },
+    "errNoPsdLib": {
+        "message": "PSD 库未加载。请刷新页面。"
+    },
+    "msgDone": {
+        "message": "所有转换已完成！"
+    },
+    "msgError": {
+        "message": "转换过程中发生错误："
+    },
+    "errNoFiles": {
+        "message": "没有转换的文件。"
+    },
+    "errNoZip": {
+        "message": "ZIP 库未加载，正在尝试单独下载。"
+    },
+    "errEnterAll": {
+        "message": "请同时输入电子邮件和代码。"
+    },
+    "msgSuccess": {
+        "message": "验证成功！专业版已激活。🎉"
+    },
+    "errInvalidCode": {
+        "message": "代码无效。请重试。"
+    },
+    "errLimitExceeded": {
+        "message": "超出设备注册限制（2 台）。"
+    }
+}

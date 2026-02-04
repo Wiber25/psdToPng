@@ -1,0 +1,80 @@
+{
+    "appName": {
+        "message": "Easy PSD Converter"
+    },
+    "appDesc": {
+        "message": "Convert PSD files to PNG easily. Support wiberwiber to unlock unlimited conversions!"
+    },
+    "dropZoneText": {
+        "message": "Drag & drop PSD files here or click to upload."
+    },
+    "convertBtn": {
+        "message": "Convert"
+    },
+    "convertingBtn": {
+        "message": "Converting..."
+    },
+    "openSettingsBtn": {
+        "message": "Register Device / Enter License"
+    },
+    "limitModalTitle": {
+        "message": "⚠️ Conversion Limit Reached"
+    },
+    "limitModalDesc1": {
+        "message": "You can convert up to 5 files at a time."
+    },
+    "limitModalDesc2": {
+        "message": "Support wiberwiber with a coffee to unlock unlimited conversions!"
+    },
+    "donateBtn": {
+        "message": "☕ Donate & Get Unlimited Code"
+    },
+    "haveCodeBtn": {
+        "message": "I have a code"
+    },
+    "licenseModalTitle": {
+        "message": "🔑 Activate Pro"
+    },
+    "licenseModalDesc": {
+        "message": "Enter the code sent to your email."
+    },
+    "emailPlaceholder": {
+        "message": "Email Address"
+    },
+    "codePlaceholder": {
+        "message": "License Code"
+    },
+    "verifyBtn": {
+        "message": "Verify"
+    },
+    "proActive": {
+        "message": "Pro License Active ✅"
+    },
+    "errNoPsdLib": {
+        "message": "PSD library not loaded. Please refresh the page."
+    },
+    "msgDone": {
+        "message": "All conversions completed!"
+    },
+    "msgError": {
+        "message": "Error during conversion: "
+    },
+    "errNoFiles": {
+        "message": "No converted files."
+    },
+    "errNoZip": {
+        "message": "ZIP library not loaded, downloading individually."
+    },
+    "errEnterAll": {
+        "message": "Please enter both email and code."
+    },
+    "msgSuccess": {
+        "message": "Verification success! Pro mode activated. 🎉"
+    },
+    "errInvalidCode": {
+        "message": "Invalid code. Please check again."
+    },
+    "errLimitExceeded": {
+        "message": "Device limit (2) exceeded."
+    }
+}

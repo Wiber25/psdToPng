@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Easy PSD Converter",
+  "name": "__MSG_appName__",
   "version": "1.0",
-  "description": "Convert PSD files to PNG easily. Support wiberwiber to unlock unlimited conversions!",
+  "default_locale": "ko",
+  "description": "__MSG_appDesc__",
   "permissions": [
     "storage",
     "identity"

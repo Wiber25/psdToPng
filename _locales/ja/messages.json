@@ -1,0 +1,80 @@
+{
+    "appName": {
+        "message": "Easy PSD Converter"
+    },
+    "appDesc": {
+        "message": "PSDファイルを簡単にPNGに変換します。wiberwiberを支援して、無制限の変換をアンロックしましょう！"
+    },
+    "dropZoneText": {
+        "message": "ここにPSDファイルをドラッグ＆ドロップするか、クリックしてください。"
+    },
+    "convertBtn": {
+        "message": "変換する"
+    },
+    "convertingBtn": {
+        "message": "変換中..."
+    },
+    "openSettingsBtn": {
+        "message": "デバイス登録 / ライセンス入力"
+    },
+    "limitModalTitle": {
+        "message": "⚠️ 変換制限のお知らせ"
+    },
+    "limitModalDesc1": {
+        "message": "一度に最大5つのファイルまで変換できます。"
+    },
+    "limitModalDesc2": {
+        "message": "無制限の変換をご希望の場合は、wiberwiberにコーヒーを一杯ご馳走してください！"
+    },
+    "donateBtn": {
+        "message": "☕ 寄付して無制限コードを入手"
+    },
+    "haveCodeBtn": {
+        "message": "コードを持っています"
+    },
+    "licenseModalTitle": {
+        "message": "🔑 Pro版を有効化"
+    },
+    "licenseModalDesc": {
+        "message": "メールで受け取ったコードを入力してください。"
+    },
+    "emailPlaceholder": {
+        "message": "メールアドレス"
+    },
+    "codePlaceholder": {
+        "message": "ライセンスコード"
+    },
+    "verifyBtn": {
+        "message": "認証する"
+    },
+    "proActive": {
+        "message": "Proライセンス有効 ✅"
+    },
+    "errNoPsdLib": {
+        "message": "PSDライブラリが読み込まれていません。ページを更新してください。"
+    },
+    "msgDone": {
+        "message": "すべての変換が完了しました！"
+    },
+    "msgError": {
+        "message": "変換中にエラーが発生しました: "
+    },
+    "errNoFiles": {
+        "message": "変換されたファイルがありません。"
+    },
+    "errNoZip": {
+        "message": "ZIPライブラリがないため、個別にダウンロードします。"
+    },
+    "errEnterAll": {
+        "message": "メールとコードの両方を入力してください。"
+    },
+    "msgSuccess": {
+        "message": "認証成功！Proモードが有効になりました。🎉"
+    },
+    "errInvalidCode": {
+        "message": "無効なコードです。もう一度確認してください。"
+    },
+    "errLimitExceeded": {
+        "message": "デバイス登録制限（2台）を超えました。"
+    }
+}

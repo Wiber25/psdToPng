@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy PSD Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Easy PSD Converter</h1>
+      <div id="pro-status" class="status-badge hidden">PRO</div>
+    </header>
+
+    <main>
+      <div class="upload-area" id="drop-zone">
+        <p>PSD 파일을 여기에 드래그하거나 클릭하세요.</p>
+        <input type="file" id="file-input" multiple accept=".psd" hidden>
+      </div>
+
+      <div class="file-list" id="file-list">
+        <!-- Files will be listed here -->
+      </div>
+
+      <div class="actions">
+        <button id="convert-btn" class="primary-btn" disabled>변환하기</button>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#" id="open-settings">기기 등록 / 라이선스 입력</a>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="limit-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>⚠️ 변환 제한 안내</h2>
+      <p>한 번에 최대 5개까지만 변환할 수 있습니다.</p>
+      <p>무제한 변환을 원하시면 <strong>wiberwiber</strong>님에게 커피 한 잔을 후원해 주세요!</p>
+      <div class="modal-actions">
+        <a href="https://buymeacoffee.com/wiberwiber" target="_blank" class="donate-btn">☕ 후원하고 무제한 코드 받기</a>
+        <button id="enter-code-btn" class="secondary-btn">이미 코드가 있어요</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- License Modal -->
+  <div id="license-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>🔑 Pro 활성화</h2>
+      <p>이메일로 받은 코드를 입력하세요.</p>
+      <div class="input-group">
+        <input type="email" id="email-input" placeholder="이메일 주소">
+        <input type="text" id="code-input" placeholder="라이선스 코드">
+      </div>
+      <button id="verify-btn" class="primary-btn">인증하기</button>
+      <p id="verify-msg" class="msg"></p>
+    </div>
+  </div>
+
+  <script src="psd.min.js"></script>
+  <script src="jszip.min.js"></script>
+  <script src="firebase-config.js" type="module"></script>
+  <script src="popup.js" type="module"></script>
+</body>
+
+</html>

@@ -5,8 +5,7 @@
   "default_locale": "ko",
   "description": "__MSG_appDesc__",
   "permissions": [
-    "storage",
-    "identity"
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html",
